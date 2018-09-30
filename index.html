@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scales=1.0">
+        <title>My Name is Luthfi</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+    </head>
+    <!-- Header / Navbar -->
+    <header class="w3-container w3-indigo">
+        <h2>Greetings My Friend !</h2>        
+    </header>
+
+    <!-- Carousel -->
+    <div class="w3-row">         
+        <div class="w3-col w3-container m8 l10">
+            <img src="" style="width:100%;padding:1vw">
+            <h2 style="font-size:6vw">Hello World</h2>
+            <h5 style="font-size:3vw">Just a simple html pages</h5>
+        </div>      
+        <div class="w3-col w3-container m4 l2" style="padding: 1vw">
+            <img src="img/skill/c-logo-icon.png" style="width:60px" onclick="onClick(this)" class="w3-hover-opacity">
+            <img src="img/skill/dot-net-logo.png" style="width:60px" onclick="onClick(this)" class="w3-hover-opacity">
+            <img src="img/skill/visual-studio-logo.png" style="width:60px" onclick="onClick(this)" class="w3-hover-opacity">
+        </div>
+    </div>     
+
+    <article class="w3-container">
+        
+    </article>
+
+    <!-- Main -->
+    <div class="w3-container" style="padding:2vw">
+        <h2>Easy Invoice</h2>
+        <p>An application to create and manage invoices</p>
+
+        <!-- Trigger/Open the Modal
+        <button onclick="document.getElementById('id01').style.display='block'"
+        class="w3-button w3-teal">Open Modal</button>
+        -->
+        <!-- The Modal -->
+        <div id="id01" class="w3-modal">
+            <div class="w3-modal-content w3-animate-top w3-card-4">
+                <div class="w3-container">
+                <span onclick="document.getElementById('id01').style.display='none'" 
+                class="w3-button w3-display-topright">&times;</span>
+                <p>Some text in the Modal..</p>
+                <p>Some text in the Modal..</p>
+                </div>
+            </div>
+        </div> 
+        
+
+        <div class="w3-row-padding">
+            <div class="w3-container w3-third">
+                <img src="img/portofolio/product.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+            </div>
+            <div class="w3-container w3-third">
+                <img src="img/portofolio/outlet.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+            </div>
+            <div class="w3-container w3-third">
+                <img src="img/portofolio/rptInvoice.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+            </div>
+        </div>
+
+        <!--<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+            <img class="w3-modal-content  w3-animate-top" id="img01" style="width:90%">
+        </div>-->
+        <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+            <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+            <div class="w3-modal-content w3-animate-zoom w3-card-4">
+                <img id="img01" style="width:100%">
+            </div>
+        </div>
+    </div> 
+
+    <div class="w3-panel w3-card-4">
+        Panel ke-2
+    </div>
+
+    <footer class="w3-container w3-blue-grey">  
+        Made With <span><img src="img/assets/love.png" style="width:1vw"></span> by Luthfi               
+        <script>
+            function onClick(element) {
+                document.getElementById("img01").src = element.src;
+                document.getElementById("modal01").style.display = "block";
+            }
+        </script>
+    </footer>
+
+    
+</html>
